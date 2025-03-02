@@ -26,3 +26,5 @@ termcolor
 hydra-core
 easydict
 ftfy
+huggingface_hub[cli]
+git+https://github.com/ollanoinc/hyvideo.git
