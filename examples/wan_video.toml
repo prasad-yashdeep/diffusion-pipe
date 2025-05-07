@@ -1,5 +1,5 @@
 # Output path for training runs. Each training run makes a new directory in here.
-output_dir = '/workspace/diffusion-pipe/data/output'
+output_dir = '/home/cc/AdFame/trainig_pipeline/diffusion-pipe/data/output'
 
 # Dataset config file.
 dataset = 'examples/dataset.toml'
@@ -62,7 +62,7 @@ video_clip_mode = 'single_middle'
 
 [model]
 type = 'wan'
-ckpt_path = '/workspace/diffusion-pipe/models/wan2.1'
+ckpt_path = '/home/cc/AdFame/trainig_pipeline/diffusion-pipe/models/Wan2.1-T2V-14B'
 dtype = 'bfloat16'
 timestep_sample_method = 'logit_normal'
 
