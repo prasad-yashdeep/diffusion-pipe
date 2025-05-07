@@ -162,3 +162,6 @@ cython_debug/
 #.idea/
 /models/Wan2.1-T2V-14B
 trainig_pipeline/diffusion-pipe/data/input/cache/
+/data/input/cache/
+/data/output/
+/data/input/
