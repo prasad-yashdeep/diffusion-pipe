@@ -1,5 +1,5 @@
 # Output path for training runs. Each training run makes a new directory in here.
-output_dir = '/home/cc/AdFame/trainig_pipeline/diffusion-pipe/data/output'
+output_dir = '/app/AdFame/trainig_pipeline/diffusion-pipe/data/output'
 
 # Dataset config file.
 dataset = 'examples/dataset.toml'
@@ -39,7 +39,7 @@ eval_gradient_accumulation_steps = 1
 # Probably want to set this a bit higher if you have a smaller dataset so you don't end up with a million saved models.
 save_every_n_epochs = 5
 # Can checkpoint the training state every n number of epochs or minutes. Set only one of these. You can resume from checkpoints using the --resume_from_checkpoint flag.
-checkpoint_every_n_epochs = 2
+checkpoint_every_n_epochs = 1
 checkpoint_every_n_minutes = 20
 # Always set to true unless you have a huge amount of VRAM.
 activation_checkpointing = true
@@ -62,7 +62,7 @@ video_clip_mode = 'single_middle'
 
 [model]
 type = 'wan'
-ckpt_path = '/home/cc/AdFame/trainig_pipeline/diffusion-pipe/models/Wan2.1-T2V-14B'
+ckpt_path = '/app/AdFame/trainig_pipeline/diffusion-pipe/models/Wan2.1-T2V-14B'
 dtype = 'bfloat16'
 timestep_sample_method = 'logit_normal'
 
